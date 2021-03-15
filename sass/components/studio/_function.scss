@@ -1,0 +1,62 @@
+// Function
+.function {
+    padding-bottom: 94px;
+}
+.function__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+.function__title {
+    padding-bottom: 50px;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.function__name {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.function__item {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+ 
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.function__thumb {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.function__card {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 27px 82px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--white-text);
+}

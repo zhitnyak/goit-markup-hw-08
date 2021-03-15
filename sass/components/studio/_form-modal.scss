@@ -1,0 +1,187 @@
+// Form-modal
+.order__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.order__box:not(:first-child) {
+    margin-top: 10px;
+}
+
+.order__thumb {
+    margin-top: 4px;
+    position: relative;
+}
+
+.order__lable{
+    display: flex;
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: var(--second-text);
+}
+
+.order__imput {
+    padding: 12px 16px 12px 42px;
+
+    width: 100%;
+    height: 40px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    color: var(--main-text);
+    transition: border-color var(--transition-function);
+
+&:focus {
+    outline:none;
+    border-color: var(--accent-text);
+}
+
+&:focus + .order__icon {
+    fill: var(--accent-text);
+}
+}
+
+.order__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+.order__textarea {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+    outline:none;
+    color: var(--main-text);
+    transition: border-color var(--transition-function);
+
+&:focus,
+&:active {
+    color: var(--main-text);
+    border-color: var(--accent-text);
+}
+
+
+&::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+}
+
+/* Grebaniy checkbox */
+.order__checkbox {
+    margin: 20px 0 30px 12px;
+
+}
+
+.order__checkbox .order--lable {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__icon {
+    cursor: pointer;
+    fill: none;
+    transition: fill var(--transition-function),
+    opacity var(--transition-function);
+    opacity: 0;
+    z-index: 1;
+}
+
+.check {
+    position: absolute;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+ 
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-text);
+    border-radius: 2px;
+
+&:checked ~ .checkbox__icon {
+    opacity: 1;
+    border: none; 
+}
+}
+    
+.check__link {
+    text-decoration-line: underline;
+    color: var(--accent-text);
+    display: flex;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.check__text {
+    margin-left: 7px;
+    display: flex;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+    color: var(--second-text);
+} 
+
+.modal__btn {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
+
+    color: var(--white-text);
+    background: var(--accent-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

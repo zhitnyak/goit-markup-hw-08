@@ -1,0 +1,49 @@
+// Hero
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/hero.jpg);
+}
+
+.hero__box {
+    max-width: 1600px;
+    text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    color: var(--white-text);
+}
+
+.hero__btn {
+    border: none;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    
+    color: var(--white-text);
+    background-color: var(--accent-text);
+}
