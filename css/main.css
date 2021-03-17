@@ -330,6 +330,28 @@ img {
           align-items: center;
 }
 
+.menu__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .icon__cross {
+  display: none;
+}
+
+.menu__button.is-open .icon__cross {
+  display: block;
+}
+
+.menu__button.is-open .icon__cross {
+  display: none;
+}
+
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
