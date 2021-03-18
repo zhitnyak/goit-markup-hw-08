@@ -11,8 +11,8 @@
 }
 
 .header__title {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
   
 .header__nav {
@@ -21,8 +21,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 
 .menu__button {
@@ -50,13 +50,13 @@
 
 
 .header__menu {
-    display: flex;
-    margin-left: 93px;
+    // display: flex;
+    // margin-left: 93px;
     position: relative;
 }
 
 .header__item:not(:last-child) {
-    margin-right: 50px;
+    // margin-right: 50px;
 }
 
 .header__nav a {
@@ -102,12 +102,12 @@
 }
 
 .contact__menu {
-    display: flex;
+    // display: flex;
     margin-left: auto;
 }
 
 .contact__item {
-    display: inline-flex;
+    // display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -118,7 +118,7 @@
 
 
 .contact__link {
-    display: flex;
+    // display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
