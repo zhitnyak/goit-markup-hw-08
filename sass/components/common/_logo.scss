@@ -7,6 +7,12 @@
 
     padding-top: 24px;
     padding-bottom: 24px;
+    @media screen and (max-width: 1199px){
+        padding-top: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    
 
 & .logo__header {
     color: var(--accent-text);
