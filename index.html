@@ -6,7 +6,7 @@
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/base/_modern-normalize.scss">
+    <!-- <link rel="stylesheet" href="./sass/base/_modern-normalize.scss"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -369,59 +369,61 @@
     </main>
     <footer class="footer">
         <div class="footer__box container">
-            <div class="contact">
-                <a class="logo" href="./index.html"><span class="logo__header">Web</span><span class="logo--footer">Studio</span></a>
-                <address class="contact__card">
-                <p class="contact__address">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="contact__menu--footer">
-                        <li class="contact__item--footer"><a class="contact__link--footer" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="contact__item--footer"><a class="contact__link--footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div class="footer__thumb">
+                <div class="contact">
+                    <a class="logo" href="./index.html"><span class="logo__header">Web</span><span class="logo--footer">Studio</span></a>
+                    <address class="contact__card">
+                    <p class="contact__address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="contact__menu--footer">
+                            <li class="contact__item--footer"><a class="contact__link--footer" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="contact__item--footer"><a class="contact__link--footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>  
+                </div>  
+                <div class="network">
+                    <h3 class="network__title">присоединяйтесь</h3>
+                    <ul class="network__menu">
+                        <li class="network__item">
+                            <a class="network__link network__link--card" href="#">
+                                <svg class="card__svg">
+                                    <use href="./images/icons.svg#instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network__item">
+                            <a class="network__link network__link--card" href="#">
+                                <svg class="card__svg">
+                                    <use href="./images/icons.svg#twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network__item">
+                            <a class="network__link network__link--card" href="#">
+                                <svg class="card__svg">
+                                    <use href="./images/icons.svg#facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network__item">
+                            <a class="network__link network__link--card" href="#">
+                                <svg class="card__svg">
+                                    <use href="./images/icons.svg#linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>  
-            </div>  
-            <div class="network">
-                <h3 class="network__title">присоединяйтесь</h3>
-                <ul class="network__menu">
-                    <li class="network__item">
-                        <a class="network__link network__link--card" href="#">
-                            <svg class="card__svg">
-                                <use href="./images/icons.svg#instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network__item">
-                        <a class="network__link network__link--card" href="#">
-                            <svg class="card__svg">
-                                <use href="./images/icons.svg#twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network__item">
-                        <a class="network__link network__link--card" href="#">
-                            <svg class="card__svg">
-                                <use href="./images/icons.svg#facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network__item">
-                        <a class="network__link network__link--card" href="#">
-                            <svg class="card__svg">
-                                <use href="./images/icons.svg#linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="form">
                 <h3 class="form__title">Подпишитесь на рассылку</h3>
                 <div class="form__box">
                     <form autocomplete="off">
                     <div class="form__thumb">
-                        <label>
+                        <label class="form__label">
                             <input class="form__input" type="email" name="email" placeholder="E-mail">
                         </label>
                         <div class="form__thumb--btn">
