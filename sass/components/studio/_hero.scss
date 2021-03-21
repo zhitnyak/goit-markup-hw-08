@@ -7,7 +7,7 @@
 @media screen and (max-width: 767px) {
 .hero {
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-480.jpg);
+  url(../images/hero/hero-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
 }
@@ -19,7 +19,7 @@ screen and (min-resolution: 2dppx) {
   max-width: 767px;
 
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-480@2x.jpg);
+  url(../images/hero/hero-480@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
 }
@@ -29,7 +29,7 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width: 768px) {
 .hero {
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-768.jpg);
+  url(../images/hero/hero-768.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
 }
@@ -40,7 +40,7 @@ screen and (min-resolution: 2dppx) {
 .hero {
   min-width: 768px;
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-768@2x.jpg);
+  url(../images/hero/hero-768@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
 }
@@ -49,10 +49,11 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 1200px) {
 .hero {
+  max-width: 1600px;
   height: 600px;
 
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-1600.jpg);
+  url(../images/hero/hero-1600.jpg);
   background-size: cover;  
   background-repeat: no-repeat;
 }
@@ -64,7 +65,7 @@ screen and (min-resolution: 2dppx) {
   height: 600px;
 
   background-image: var(--gradient-hero),
-  url(../images/mobile/hero-1600@2x.jpg);
+  url(../images/hero/hero-1600@2x.jpg);
   background-size: cover;  
   background-repeat: no-repeat;
 }
