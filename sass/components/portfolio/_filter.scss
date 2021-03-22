@@ -1,13 +1,31 @@
 // Filter
 .portfolio {
-    padding-top: 101px;
-    padding-bottom: 94px;
+    justify-content: center;
+    padding: 60px 0;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+      }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding: 94px 0;
+    }
 }
 
 .portfolio__name {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 25px;
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 50px;
 
+    }
 &--item:not(:last-child) {
     margin-right: 8px;
 }
@@ -22,13 +40,15 @@
     border: none;
     background-color: var(--second-bg-color);
     cursor: pointer;
-
-    display: flex;
+    
+    margin-bottom: 15px;
     padding: 6px 22px;
-    margin-bottom: 50px;
     border-radius: 4px;
-
     transition: var(--transition-function);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 
 &:hover,
 &:focus {
@@ -39,21 +59,50 @@
 
 .object__name {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
 
 .object__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    // flex-basis: calc(100% / 3 - 30px);
+    // margin-left: 30px;
+    // margin-top: 30px;
 
     background: var(--main-bg-color);
     border: 1px solid var(--border-color-frame);
     box-sizing: border-box;
     display: flex;
+
+    // max-width: 450px;
+    // @media screen and (min-width: 768px) {
+    //     max-width: 354px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     max-width: 370px;
+    // }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        max-width: 450px;
+      
+    }
+  @media screen and (min-width: 768px) and (max-width: 1199px)  {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;    
+      width: 354px;
+      flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px){
+      flex-basis: calc(100% / 3 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;    
+      width: 270px;
+  }
+
+
+
 
 &:hover .object__overlay,
 &:focus .object__overlay {
