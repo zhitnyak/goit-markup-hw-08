@@ -314,10 +314,35 @@ img {
   position: sticky;
   z-index: 2;
   top: 0;
-  min-height: 80px;
+  min-height: 60px;
   border-bottom: 1px solid var(--border-color);
   background-color: var(--main-bg-color);
-  display: none;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__title {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__title {
+    max-width: 1200px;
+  }
 }
 
 .header__nav {
@@ -325,6 +350,20 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .menu__button {
@@ -335,6 +374,9 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .menu__button .icon__cross {
@@ -353,6 +395,34 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    margin-left: 93px;
+  }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header__nav a {
   color: inherit;
 }
@@ -364,7 +434,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   color: var(--main-text);
   -webkit-transition: color var(--transition-function);
   transition: color var(--transition-function);
@@ -394,25 +464,50 @@ img {
   margin-left: auto;
 }
 
-.contact__item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 767px) {
+  .contact__menu {
+    display: none;
+  }
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -436,9 +531,6 @@ img {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -448,7 +540,6 @@ img {
   letter-spacing: 0.03em;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 24px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -457,19 +548,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
@@ -479,6 +560,19 @@ img {
 
 .logo .logo--footer {
   color: var(--white-text);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    padding: 16px 0 16px;
+  }
 }
 
 .footer {
