@@ -1,6 +1,6 @@
 // Footer
 .footer {
-    background-color: var(--accenr-bg-color);
+    background-color: var(--accent-bg-color);
     padding: 60px 0;
 }
 
@@ -33,7 +33,6 @@
     text-align: center;
     flex-direction: column;
     margin-right: 195px;
-    
 
 }
     @media screen and (min-width: 1200px){
@@ -143,7 +142,6 @@
     display: flex;
 }
 
-
 .form {
     display: flex;
     flex-wrap: wrap;
@@ -201,9 +199,6 @@
     background: transparent;
     transition: border-color var(--transition-function);
 
-    // @media screen and (min-width: 768px){
-    //     width: 450px;
-    // }
     @media screen and (min-width: 1200px){
         width: 358px;
     }
@@ -219,7 +214,6 @@
 
     @media screen and (max-width: 1199px){
     padding-top: 20px;
-    // padding-bottom: 60px;
 }
 }
 

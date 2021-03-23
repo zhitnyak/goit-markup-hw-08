@@ -19,9 +19,6 @@
  
 .mobile-menu__btn {
   transition: fill var(--transition-function);
-  @media screen and (min-width: 480px) {
-    right: calc((100% - 480px) / 2 + 11px);
-  }
 
 &:hover,
 &:focus {

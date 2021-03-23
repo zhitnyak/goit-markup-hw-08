@@ -64,32 +64,20 @@
 .object__name {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
     margin-left: -30px;
     margin-top: -30px;
+    }
 }
 
 .object__item {
-    // flex-basis: calc(100% / 3 - 30px);
-    // margin-left: 30px;
-    // margin-top: 30px;
-
     background: var(--main-bg-color);
     border: 1px solid var(--border-color-frame);
     box-sizing: border-box;
     display: flex;
 
-    // max-width: 450px;
-    // @media screen and (min-width: 768px) {
-    //     max-width: 354px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     max-width: 370px;
-    // }
-
     @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-        max-width: 450px;
-      
+        width: 100%;
     }
   @media screen and (min-width: 768px) and (max-width: 1199px)  {
       flex-basis: calc(100% / 2 - 30px);
@@ -104,9 +92,6 @@
       margin-left: 30px;    
       width: 270px;
   }
-
-
-
 
 &:hover .object__overlay,
 &:focus .object__overlay {
@@ -163,7 +148,6 @@
 
     color: var(--second-text);
 }
-
 
 .filter__box {
     padding: 20px 24px;
