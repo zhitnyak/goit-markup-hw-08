@@ -14,12 +14,14 @@
         <div class="header__title container">
             <nav class="header__nav">
                     <a class="logo nav" href=""><span class="logo__header">Web</span>Studio</a>
-                    <!-- <button type="button" class="menu__button is-open" aria-expanded="false" data-menu-button>
-                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >         <svg class="mobile-menu__btn correct__btn" width="24px" height="16px" aria-label="Переключатель мобильного меню">
                             <use class="icon__menu" href="./images/icons.svg#menu-mobile"></use>
-                            <use class="icon__cross" href="./images/icons.svg#close-mobile"></use>
                         </svg>
-                    </button> -->
+                    </button>
                     <ul class="header__menu">
                         <li class="header__item">
                             <a class="header__link current" href="./index.html">Студия
@@ -462,13 +464,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
-        const { height: pageHeaderHeight } = document
-        .querySelector(".header-title")
-        .getBoundingClientRect();
-        
-        document.body.style.paddingTop = '${pageHeaderHeight}px';
-    </script> -->
     <div class="order__backdrop is-hidden" data-modal>
         <div class="order__modal">
             <h3 class="order__title">Оставьте свои данные, мы вам перезвоним</h3>
@@ -530,8 +525,66 @@
             </button>
         </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu__icon" width="19px" height="19px">
+            <use href="./images/icons.svg#close-mobile"></use>
+          </svg>
+        </button>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current"
+                >Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+          </ul>
+        <ul class="mobile-contacts mobile-nav__list">
+          <li class="mobile-contacts__item mobile-nav__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-contacts__link mobile-contacts__link--tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item mobile-nav__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link mobile-contacts__link--email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social mobile-nav__list">
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Instagram
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Twitter
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Facebook
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    <script
+      defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+    </script>    
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

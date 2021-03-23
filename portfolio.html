@@ -13,7 +13,15 @@
     <header class="header">
         <div class="header__title container">
             <nav class="header__nav">
-                    <a class="logo" href=""><span class="logo__header">Web</span>Studio</a>
+                    <a class="logo nav" href=""><span class="logo__header">Web</span>Studio</a>
+                    <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >         <svg class="mobile-menu__btn correct__btn" width="24px" height="16px" aria-label="Переключатель мобильного меню">
+                            <use class="icon__menu" href="./images/icons.svg#menu-mobile"></use>
+                        </svg>
+                    </button>
                     <ul class="header__menu">
                         <li class="header__item">
                             <a class="header__link" href="./index.html">Студия
@@ -48,7 +56,7 @@
             </ul>
         </div>
     </header>
-<main>
+    <main>
         <section class="portfolio">
             <div class="portfolio-button container">
                 <h1 class="visually-hidden">portfolio</h1>
@@ -324,5 +332,128 @@
             </div>
         </div>
     </footer>
+
+    <div class="order__backdrop is-hidden" data-modal>
+        <div class="order__modal">
+            <h3 class="order__title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form>
+                <div class="order__box">
+                    <label class="order__lable" for="username">Имя</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="text" name="username" id="username">
+                        <svg class="order__icon">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order__box">
+                    <label class="order__lable" for="phone">Телефон</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="tel" name="phone" id="phone">
+                        <svg class="order__icon">
+                            <use href="./images/icons.svg#phone2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order__box">
+                    <label class="order__lable" for="email">Почта</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="email" name="email" id="email">
+                        <svg class="order__icon">
+                            <use href="./images/icons.svg#email2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order__box">
+                    <label class="order__lable" for="comment">Комментарий</label>
+                    <div class="order__thumb">
+                        <textarea class="order__textarea" name="comment" id="comment" placeholder ="Введите текст"></textarea>
+                    </div>
+                </div>
+                <div class="order__checkbox">
+                    <label class="order--lable" for="check">
+                        <input class="check" type="checkbox" name="agreement" id="check">
+                        <svg class="checkbox__icon" width="16" height="15">
+                            <use href="./images/icons.svg#check"></use>
+                        </svg>
+                        <span class="check-box"></span>
+
+                        <span class="check__text">
+                            Соглашаюсь с рассылкой и принимаю&#160; 
+                            <a class="check__link" href="#">Условия договора</a>
+                        </span>
+                </label>
+                </div>
+                <button class="modal__btn" type="submit">Отправить</button>
+            </form>
+    
+            <button class="order__close" type="button" data-modal-close>
+            <svg class="order__svg" width="11" height="11">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu__icon" width="19px" height="19px">
+            <use href="./images/icons.svg#close-mobile"></use>
+          </svg>
+        </button>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current"
+                >Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+          </ul>
+        <ul class="mobile-contacts mobile-nav__list">
+          <li class="mobile-contacts__item mobile-nav__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-contacts__link mobile-contacts__link--tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item mobile-nav__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link mobile-contacts__link--email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social mobile-nav__list">
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Instagram
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Twitter
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">Facebook
+                <span class="link__element">&verbar;</span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="mobile-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    <script
+      defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+    </script>    
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>

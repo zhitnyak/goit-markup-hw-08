@@ -1,28 +1,17 @@
 // Logo
 .logo {
-    // display: flex;
-    // align-items: center;
     justify-content:center;
-    // margin-left: auto;
-    // margin-right: auto;
 
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-left: auto;
     margin-right: auto;
 
-    // padding-top: 24px;
-    // padding-bottom: 24px;
     @media screen and (max-width: 1199px){
         padding-top: 0;
         display: flex;
-        justify-content: center;
     }
-    // @media screen and (min-width: 1200px){
-    //     justify-content: flex-start;
-    // }
 
 & .logo__header {
     color: var(--accent-text);
@@ -31,13 +20,21 @@
 & .logo--footer {
     color: var(--white-text);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+    margin-right: 93px;
+}
 }
 
 .nav {
     display: flex;
-    margin-right: auto;
-    // padding-top: 23px;
-    // padding-bottom: 25px;
     @media screen and (max-width: 767px){
-        padding: 16px 0 16px;    }
+        padding: 16px 0 16px;
+        }
+        
     }
+
+
+
