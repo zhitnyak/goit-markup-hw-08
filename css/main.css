@@ -559,18 +559,6 @@ img {
   color: var(--white-text);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 93px;
-  }
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +568,21 @@ img {
 @media screen and (max-width: 767px) {
   .nav {
     padding: 16px 0 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    margin-right: 88px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-right: 93px;
   }
 }
 
@@ -613,6 +616,11 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__thumb {
     margin-bottom: 60px;
   }
 }
@@ -631,14 +639,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-right: 195px;
   }
 }
@@ -683,7 +683,7 @@ img {
   color: var(--white-text);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .contact__card {
     text-align: center;
   }
@@ -1921,6 +1921,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .object__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .object__item {
   background: var(--main-bg-color);
   border: 1px solid var(--border-color-frame);
@@ -2030,6 +2036,16 @@ img {
           transform: translateX(100%);
   -webkit-transition: var(--transition-function);
   transition: var(--transition-function);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-container.is-open {
@@ -2129,10 +2145,6 @@ img {
   transition: fill var(--transition-function);
 }
 
-.mobile-nav__list {
-  margin-bottom: 302px;
-}
-
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -2200,6 +2212,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .link__element {

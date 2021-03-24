@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
     margin-bottom: 60px;
     }
 
@@ -28,10 +30,6 @@
     background-color: var(--accenr-bg-color);
     
     @media screen and (min-width: 768px) and (max-width: 1199px){
-
-    display: flex;
-    text-align: center;
-    flex-direction: column;
     margin-right: 195px;
 
 }
@@ -74,7 +72,7 @@
     margin-top: 20px;
 
     color: var(--white-text);
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
 }
